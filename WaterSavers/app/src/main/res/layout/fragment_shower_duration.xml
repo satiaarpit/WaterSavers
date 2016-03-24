@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.ShowerDurationFragment"
+    android:background="@color/whiteColor">
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:id="@+id/showerDurationImage"
+        android:src="@drawable/shower_duration"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/showerDurationLabel"
+        android:layout_below="@id/showerDurationImage"
+        android:text="How long is your average shower (in minutes) ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/showerDurationLabel"
+        android:id="@+id/showerDuration">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/showerDurationLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/showerDurationRight"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.MiscellaneousFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/miscellaneous"
+        android:id="@+id/miscellaneousImage"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/miscellaneousLabel"
+        android:layout_below="@id/miscellaneousImage"
+        android:text="Miscellaneous water usage in gallons (like cooking, cleaning, running water)?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/miscellaneousLabel"
+        android:id="@+id/miscellaneous">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/miscellaneousLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/miscellaneousRight"/>
+
+</RelativeLayout>

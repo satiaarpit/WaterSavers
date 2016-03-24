@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.WashingMachineTypeFragment">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:id="@+id/washingMachineTypeImage"
+        android:src="@drawable/washing_machine_type"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/washingMachineTypeLabel"
+        android:layout_below="@id/washingMachineTypeImage"
+        android:text="What type of washing machine you have ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/washingMachineTypeLabel"
+        android:id="@+id/washingMachineType">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/washingMachineTypeLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/washingMachineTypeRight"/>
+
+</RelativeLayout>

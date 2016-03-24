@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.FlushFrequencyFragment"
+    android:background="@color/whiteColor">
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:id="@+id/flushFrequencyImage"
+        android:src="@drawable/flush_freq"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/flushFrequencyLabel"
+        android:layout_below="@id/flushFrequencyImage"
+        android:text="How many times a day do you flush the toilet ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/flushFrequencyLabel"
+        android:id="@+id/flushFrequency">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/flushFrequencyLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/flushFrequencyRight"/>
+</RelativeLayout>

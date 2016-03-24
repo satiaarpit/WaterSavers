@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.FlushTypeFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:id="@+id/flushTypeImage"
+        android:src="@drawable/flush_type"
+        />
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/flushTypeLabel"
+        android:layout_below="@id/flushTypeImage"
+        android:text="Does your toilet have dual flush ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/flushTypeLabel"
+        android:id="@+id/flushType">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/flushTypeLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/flushTypeRight"/>
+
+</RelativeLayout>

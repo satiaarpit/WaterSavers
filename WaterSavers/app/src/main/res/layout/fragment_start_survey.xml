@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.StartSurveyFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/surveyImage"
+        android:src="@drawable/survey"/>
+
+    <com.devspark.robototextview.widget.RobotoButton
+        style="@style/basicTextBox"
+        android:id="@+id/startSurveyButton"
+        android:text="Let's Start"
+        android:textColor="@color/whiteColor"
+        android:background="@color/baseColor"
+        android:layout_below="@id/surveyImage"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

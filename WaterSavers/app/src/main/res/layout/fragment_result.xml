@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.ResultFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageLayout"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:id="@+id/star_one"
+            style="@style/star" />
+        <ImageView
+            android:id="@+id/star_two"
+            style="@style/star"
+            />
+        <ImageView
+            android:id="@+id/star_three"
+            style="@style/star"
+            />
+        <ImageView
+            android:id="@+id/star_four"
+            style="@style/star"
+            />
+        <ImageView
+            android:id="@+id/star_five"
+            style="@style/star"
+            />
+    </LinearLayout>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreLabel"
+            android:layout_below="@id/imageLayout"
+            android:layout_width="match_parent"
+            android:textSize="28dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="Your score is :"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"/>
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:layout_below="@id/scoreLabel"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:textSize="40dp"
+            android:text="3640"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/conclusion"
+            android:layout_below="@id/score"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:textSize="28dp"
+            android:textColor="#000000"
+            android:text="You have saved 3654 gallons of water this month"/>
+
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/facebook"
+        android:src="@drawable/facebook_icon"
+        android:layout_height="100dp"
+        android:layout_width="100dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        style="@style/rightButton"
+        android:src="@drawable/twitter_icon"/>
+
+</RelativeLayout>

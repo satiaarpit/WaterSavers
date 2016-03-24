@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WaterSavers</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="facebook_app_id">932116233492197</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_survey">SurveyActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="shower_head_type_hint">It is a low-flow showerhead if there is a STAR certified mark on the showered.</string>
+    <string name="shower_duration_hint">On an average, a person takes a shower for 10 minutes.</string>
+    <string name="flush_type_hint">STAR certified mark on toilet indicates dual-flush toilet.</string>
+    <string name="flush_duration_hint">On an average, a person uses the flush 5-8 times a day.</string>
+    <string name="dishwasher_type_hint">Check the STAR certification mark on the dishwasher.</string>
+    <string name="sprinkler_duration_hint">Most of the people operate sprinklers for a duration of 10-30 minutes.</string>
+    <string name="misc_hint">On an average, miscellaneous usage of water per person constitutes upto 40-70 gallons.</string>
+</resources>

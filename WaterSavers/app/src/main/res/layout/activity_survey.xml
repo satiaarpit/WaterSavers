@@ -1,0 +1,38 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.SurveyActivity"
+    android:id="@+id/drawer"
+    android:background="@color/whiteColor"
+    >
+    <!-- The main content view -->
+    <RelativeLayout
+        android:id="@+id/surveyActivityContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/surveySpinner"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>>
+    <!-- The navigation drawer -->
+        <ListView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:id="@+id/list"
+            android:divider="@color/whiteColor"
+            android:dividerHeight="2dp"
+            android:background="@color/baseColor"/>
+
+
+</android.support.v4.widget.DrawerLayout>

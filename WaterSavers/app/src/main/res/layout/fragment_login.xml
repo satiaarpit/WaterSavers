@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.LoginFragment">
+    <ImageView
+        android:layout_marginTop="80dp"
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/watersavers"
+        android:id="@+id/appLogo"/>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/registeredUserName"
+        android:layout_below="@id/appLogo"
+        android:textColorLink="@color/baseColor"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/registeredPassword"
+        android:layout_below="@id/registeredUserName"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoButton
+        style="@style/basicTextBox"
+        android:id="@+id/loginButton"
+        android:text="Login"
+        android:textColor="@color/whiteColor"
+        android:background="@color/baseColor"
+        android:layout_below="@id/registeredPassword"
+        android:layout_marginTop="12dp"/>
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/register"
+            android:layout_height="40dp"
+            android:text="Not Registered Yet? Sign Up"
+            android:textColor="@color/whiteColor"
+            android:gravity="center"
+            android:background="@color/baseColor">
+        </com.devspark.robototextview.widget.RobotoButton>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.FamilySizeFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/family_size"
+        android:id="@+id/familySizeImage"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/familySizeLabel"
+        android:layout_below="@id/familySizeImage"
+        android:text="How many persons live in your house?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/familySizeLabel"
+        android:id="@+id/familySize">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/familySizeLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/familySizeRight"/>
+
+</RelativeLayout>

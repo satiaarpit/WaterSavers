@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.SprinklerDurationFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/sprinkler_frequency"
+        android:id="@+id/sprinklerDurationImage"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/sprinklerDurationLabel"
+        android:layout_below="@id/sprinklerDurationImage"
+        android:text="For how long do you operate the sprinklers (in minutes)?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/sprinklerDurationLabel"
+        android:id="@+id/sprinklerDuration">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/sprinklerDurationLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/sprinklerDurationRight"/>
+
+</RelativeLayout>

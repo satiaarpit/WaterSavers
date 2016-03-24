@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SignUpFragment">
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/firstName"
+        android:layout_marginTop="40dp"
+        android:hint="First Name"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/lastName"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="12dp"
+        android:hint="Last Name"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/userName"
+        android:layout_below="@id/lastName"
+        android:layout_marginTop="12dp"
+        android:hint="User name"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/password"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/confirmPassword"
+        android:layout_below="@id/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:hint="Confirm Password"
+        style="@style/basicTextBox"
+        >
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoEditText
+        android:id="@+id/email"
+        android:layout_below="@id/confirmPassword"
+        android:layout_marginTop="12dp"
+        android:hint="Email"
+        style="@style/basicTextBox">
+    </com.devspark.robototextview.widget.RobotoEditText>
+
+    <com.devspark.robototextview.widget.RobotoButton
+        style="@style/basicTextBox"
+        android:id="@+id/signUpButton"
+        android:text="Register"
+        android:textColor="@color/whiteColor"
+        android:background="@color/baseColor"
+        android:layout_below="@id/email"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>

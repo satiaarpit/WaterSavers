@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.WashingMachineFrequencyFragment">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/washing_machine_freq"
+        android:id="@+id/washingMachineFrequencyImage"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/washingMachineFrequencyLabel"
+        android:layout_below="@id/washingMachineFrequencyImage"
+        android:text="How many loads do you have per week ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/washingMachineFrequencyLabel"
+        android:id="@+id/washingMachineFrequency">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/washingMachineFrequencyLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/washingMachineFrequencyRight"/>
+
+</RelativeLayout>

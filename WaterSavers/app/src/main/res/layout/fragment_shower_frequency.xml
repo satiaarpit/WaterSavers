@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.ShowerFrequencyFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:id="@+id/showerFrequencyImage"
+        android:src="@drawable/shower_frequency"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/showerFrequencyLabel"
+        android:layout_below="@id/showerFrequencyImage"
+        android:text="How many  times a day do you take a shower ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/showerFrequencyLabel"
+        android:id="@+id/showerFrequency">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/showerFrequencyLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/showerFrequencyRight"/>
+
+</RelativeLayout>

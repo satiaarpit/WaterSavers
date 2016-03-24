@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/serialNo"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/serialNo"
+        android:layout_marginLeft="4dp"
+        android:textSize="20dp"
+        android:id="@+id/name"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/bronzeMedal"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/name"
+        />
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/silverMedal"
+        android:layout_toRightOf="@id/bronzeMedal"
+        />
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/goldMedal"
+        android:layout_toRightOf="@id/silverMedal"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:text="3650"
+        android:textColor="@color/black"
+        android:layout_marginRight="8dp" />
+</RelativeLayout>

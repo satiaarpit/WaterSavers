@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.DishWasherTypeFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/dishwasher_type"
+        android:id="@+id/dishWasherTypeImage"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/dishWasherTypeLabel"
+        android:layout_below="@id/dishWasherTypeImage"
+        android:text="Do you have a STAR certified dishwasher ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/dishWasherTypeLabel"
+        android:id="@+id/dishWasherType">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/dishWasherTypeLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/dishWasherTypeRight"/>
+
+</RelativeLayout>

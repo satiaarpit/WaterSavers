@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asatia.watersavers.SurveyPackage.SprinklerNumberFragment"
+    android:background="@color/whiteColor">
+
+    <ImageView
+        style="@style/surveyQuestionImage"
+        android:src="@drawable/sprinkler_number"
+        android:id="@+id/sprinklerNumberImage"/>
+    <com.devspark.robototextview.widget.RobotoTextView
+        style="@style/questionLabel"
+        android:id="@+id/sprinklerNumberLabel"
+        android:layout_below="@id/sprinklerNumberImage"
+        android:text="How many sprinklers do you have in your lawn ?"
+        />
+    <NumberPicker
+        style="@style/numberPicker"
+        android:layout_below="@id/sprinklerNumberLabel"
+        android:id="@+id/sprinklerNumber">
+    </NumberPicker>
+    <ImageView
+        style="@style/leftButton"
+        android:id="@+id/sprinklerNumberLeft"/>
+    <ImageView
+        style="@style/rightButton"
+        android:id="@+id/sprinklerNumberRight"/>
+
+</RelativeLayout>
