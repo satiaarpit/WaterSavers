@@ -33,23 +33,22 @@ Outputs:
 Water usage compared with other people in the same area. How much water can be saved by making changes (landscape/lifestyle changes). Strategies for saving water.
 
 ##Features : 
-1) Login with username password, if not registered signup.
-2) Take a short survey to answer questions related to your water usage. Hints are also available to help you answer certain questions.
-3) Once you complete the survey, you will receive score based on your water conservation. Score is generated based on a formula which was formulated using data available from water agencies in San Diego.
-4) You can share your score by posting it on facebook, using facebook share button.
-5) You can also map yourself and see the scores of people in and around your locality.
-6) Based on your response, you will be provided with hints to conserve water and score more.
-7) In order to gamify water conservation, individuals will be given gift coupons if their score crosses some milestones. you can view the milestones, and the associated coupons under 'Goals'..
-8) Also, you can view the leaderboard to compare your scores with others!
-8) Once done, you can sign out easily.
+1) Login with username password, if not registered signup.  
+2) Take a short survey to answer questions related to your water usage. Hints are also available to help you answer certain questions.  
+3) Once you complete the survey, you will receive score based on your water conservation. Score is generated based on a formula which was formulated using data available from water agencies in San Diego.  
+4) You can share your score by posting it on facebook, using facebook share button.  
+5) You can also map yourself and see the scores of people in and around your locality.  
+6) Based on your response, you will be provided with hints to conserve water and score more.  
+7) In order to gamify water conservation, individuals will be given gift coupons if their score crosses some milestones. you can view the milestones, and the associated coupons under 'Goals'.  
+8) Also, you can view the leaderboard to compare your scores with others!  
+8) Once done, you can sign out easily.  
 
 ## Screenshots :
-![alt text](http://imgur.com/OFhTN8F "WaterSavers")
 ![alt text](https://github.com/satiaarpit/WaterSavers/blob/master/WaterSavers-screenshots.jpg)
 
 ##Note :
-1)In order to signup, your device GPS must be on, which is required to take location parameters.
-2) Works best in 5 inch screen size
+1)In order to signup, your device GPS must be on, which is required to take location parameters.  
+2) Works best in 5 inch screen size.  
 
 
 
@@ -79,5 +78,10 @@ The app can be used to suggest alternate landscaping options and/or appliances.
 
 ## Technologies and Sdk used :
 
-* Android SDK * Facebook SDK * Google Android API * Android Studio * RESTFul APIs
-(for login,register and maintaining user profiles)
+
+* Android SDK   
+* Facebook SDK  
+* Google Android API   
+* Android Studio   
+* RESTFul APIs
+(for login,register and maintaining user profiles)  
