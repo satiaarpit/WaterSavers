@@ -39,13 +39,13 @@ public class GoalFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView= inflater.inflate(R.layout.fragment_goal, container, false);
-        activity.hideHint();
+        /*activity.hideHint();
         activity.changeToolbarText("My goals");
         goals=(ListView)rootView.findViewById(R.id.goalList);
         arrayList=new ArrayList<GoalListItem>();
         populateList();
         adapter=new GoalListAdapter(activity.getApplicationContext(),R.layout.goal_list_item,arrayList);
-        goals.setAdapter(adapter);
+        goals.setAdapter(adapter);*/
         return rootView;
     }
 

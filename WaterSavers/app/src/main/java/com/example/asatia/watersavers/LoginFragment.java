@@ -40,11 +40,8 @@ public class LoginFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootView= inflater.inflate(R.layout.fragment_login, container, false);
         activity.hideToolbar();
-        //spinner=(ProgressBar)rootView.findViewById(R.id.spinner1);
-        //spinner.setVisibility(View.GONE);
         username=(RobotoEditText)rootView.findViewById(R.id.registeredUserName);
         password=(RobotoEditText)rootView.findViewById(R.id.registeredPassword);
         loginButton=(RobotoButton)rootView.findViewById(R.id.loginButton);
@@ -59,7 +56,6 @@ public class LoginFragment extends Fragment {
                 else if (pass==null)
                     Toast.makeText(activity.getApplicationContext(),"Please enter a valid password",Toast.LENGTH_SHORT).show();
                 else {
-                    Log.e("In login ", "Username " + user + " pass " + pass);
                     activity.getLocation();
                     activity.checkCredentials(user, pass);
                 }

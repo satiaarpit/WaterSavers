@@ -33,7 +33,6 @@ public class SignUpFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootView= inflater.inflate(R.layout.fragment_sign_up, container, false);
         firstName=(RobotoEditText)rootView.findViewById(R.id.firstName);
         lastName=(RobotoEditText)rootView.findViewById(R.id.lastName);
@@ -80,7 +79,7 @@ public class SignUpFragment extends Fragment {
                     return false;
                 }
                 else {
-                    if(emailId.equals("")||emailId.equals(null))  {
+                    if(emailId.equals("")||emailId.equals(null)||!android.util.Patterns.EMAIL_ADDRESS.matcher(emailId).matches())  {
                         error="Please provide a valid email";
                         return false;
                     }

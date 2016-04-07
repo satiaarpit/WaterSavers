@@ -68,15 +68,14 @@
             android:text="You have saved 3654 gallons of water this month"/>
 
     <ImageView
-        style="@style/leftButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
         android:id="@+id/facebook"
-        android:src="@drawable/facebook_icon"
-        android:layout_height="100dp"
-        android:layout_width="100dp"/>
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        style="@style/rightButton"
-        android:src="@drawable/twitter_icon"/>
+        android:src="@drawable/share_fb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true" />
+
 
 </RelativeLayout>

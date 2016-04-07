@@ -69,7 +69,7 @@ public class Task extends AsyncTask <String,Void,String>{
             Log.e("Content leaderboard :",content);
             return content;
         } catch (Exception e ) {
-            Log.e("Exception ", e.toString());
+            Log.e("Exception in register ", e.toString());
         }
         return "";
     }
@@ -87,7 +87,6 @@ public class Task extends AsyncTask <String,Void,String>{
             while((line=reader.readLine())!=null)  {
                 content+=line;
             }
-            Log.e("Content of reg :",content);
             return content;
         } catch (Exception e ) {
             Log.e("Exception ", e.toString());
@@ -113,7 +112,6 @@ public class Task extends AsyncTask <String,Void,String>{
             while((line=reader.readLine())!=null)  {
                 content+=line;
             }
-            Log.e("Content :", content);
             return content;
         } catch (Exception e ) {
             Log.e("Exception ", e.toString());

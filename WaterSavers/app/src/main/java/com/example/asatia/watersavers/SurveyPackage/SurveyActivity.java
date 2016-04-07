@@ -110,6 +110,10 @@ public class SurveyActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
+                    case 0:
+                        changeFragment(new ResultFragment());
+                        drawerLayout.closeDrawers();
+                        break;
                     case 1:
                         changeFragment(new TipsFragment());
                         drawerLayout.closeDrawers();
@@ -132,7 +136,6 @@ public class SurveyActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setIcon(R.drawable.no_star);
-
     }
 
     protected void onPostCreate(Bundle savedInstances)  {
@@ -182,49 +185,34 @@ public class SurveyActivity extends AppCompatActivity {
     }
 
     public void post()  {
-        Log.e("in post","adaada");
-        //Bitmap image= BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
-        ShareLinkContent content=new ShareLinkContent.Builder()
-                .build();
-        /*SharePhoto photo=new SharePhoto.Builder()
-                .setBitmap(image)
-                .setCaption("Water Savers")
-                .build();*/
-        /*SharePhotoContent content=new SharePhotoContent.Builder()
-                .addPhoto(photo)
-                .build();*/
-        ShareApi.share(content, null);
-        Log.e("conten shared", "adaada");
+        ShareDialog shareDialog = new ShareDialog(this);
+        callbackManager = CallbackManager.Factory.create();
+        shareDialog.registerCallback(callbackManager, new
 
-       /* ShareDialog shareDialog=new ShareDialog(this);
-        shareDialog.registerCallback(callbackManager, new FacebookCallback<Sharer.Result>() {
-            @Override
-            public void onSuccess(Sharer.Result result) {
+                FacebookCallback<Sharer.Result>() {
+                    @Override
+                    public void onSuccess(Sharer.Result result) {
+                    }
 
-            }
+                    @Override
+                    public void onCancel() {
+                    }
 
-            @Override
-            public void onCancel() {
-
-            }
-
-            @Override
-            public void onError(FacebookException e) {
-
-            }
-        });
-        if (ShareDialog.canShow(ShareLinkContent.class))    {
+                    @Override
+                    public void onError(FacebookException error) {
+                    }
+                });
+        if (ShareDialog.canShow(ShareLinkContent.class)) {
+            Bitmap bitmap=BitmapFactory.decodeResource(getResources(), R.drawable.banner);
+            SharePhoto photo=new SharePhoto.Builder()
+                    .setBitmap(bitmap)
+                    .build();
             SharePhotoContent content=new SharePhotoContent.Builder()
-                    .setContentUrl(Uri.parse("Hi"))
                     .addPhoto(photo)
                     .build();
             shareDialog.show(content);
-            ShareContent shareContent=new ShareFeedContent.Builder().setRef("Hi").build();
-            ShareApi api=new ShareApi(content);
-            api.setMessage("Hi");
-            shareDialog.show(shareContent);
-        }*/
-
+        }
+        Toast.makeText(this,"Posted in fb",Toast.LENGTH_SHORT).show();
     }
 
     protected void onActivityResult(int requestCode, int responseCode, Intent data) {
@@ -450,6 +438,12 @@ public class SurveyActivity extends AppCompatActivity {
                     item.setBadge(jsonObject.getInt("badge_status"));
                     list.add(item);
                 }
+                LeaderBoardListItem item=new LeaderBoardListItem();
+                item.setName(waterData.getFirstName() + " " + waterData.getLastName());
+                item.setSerialNo((list.size()+1) + ".");
+                item.setScore(waterData.getScore() + "");
+                item.setBadge(0);
+                list.add(item);
             }
             return list;
         }
@@ -473,7 +467,7 @@ public class SurveyActivity extends AppCompatActivity {
                 for(int i=0;i<array.length();i++)   {
                     MapListItem item=new MapListItem();
                     JSONObject jsonObject=array.getJSONObject(i);
-                    Log.e("for ",i+" "+jsonObject.getString("first_name"));
+                    Log.e("for ", i + " " + jsonObject.getString("first_name"));
                     item.setUser(jsonObject.getString("first_name") + " " + jsonObject.getString("last_name"));
                     item.setScore(jsonObject.getInt("user_score"));
                     Log.e("for ", i + " " + jsonObject.getString("first_name") + " " + jsonObject.getInt("badge_status"));
@@ -485,9 +479,15 @@ public class SurveyActivity extends AppCompatActivity {
                     else {
                         item.setUser(false);
                     }
-
                     list.add(item);
                 }
+                MapListItem item=new MapListItem();
+                item.setUser(waterData.getFirstName() + " " + waterData.getLastName());
+                item.setUser(true);
+                item.setScore((int)waterData.getScore());
+                item.setLat(waterData.getLatitude());
+                item.setLon(waterData.getLongitude());
+                list.add(item);
             }
             return list;
         }
