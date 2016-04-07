@@ -44,7 +44,8 @@ Water usage compared with other people in the same area. How much water can be s
 8) Once done, you can sign out easily.
 
 ## Screenshots :
-![Alt text](http://imgur.com/OFhTN8F "WaterSavers")  http://imgur.com/OFhTN8F
+![alt text](http://imgur.com/OFhTN8F "WaterSavers")
+![alt text](https://github.com/satiaarpit/WaterSavers/blob/master/WaterSavers-screenshots.jpg)
 
 ##Note :
 1)In order to signup, your device GPS must be on, which is required to take location parameters.
